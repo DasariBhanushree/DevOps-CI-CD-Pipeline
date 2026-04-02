@@ -1,7 +1,10 @@
-def add(a, b):
-    return a + b
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "CI/CD with Docker is working 🚀"
 
 if __name__ == "__main__":
-    result = add(5, 3)
-    print("Result is:", result)
-    print("CI/CD with Docker working")
+    app.run(host="0.0.0.0", port=5000)
