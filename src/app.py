@@ -1,10 +1,11 @@
 from flask import Flask
+import socket
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Updated via Git CLI"
+    return f"Handled by pod: {socket.gethostname()}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
