@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return f"Handled by pod: {socket.gethostname()}"
-
+    
 @app.route("/health")
 def health():
     return "FAIL", 500
