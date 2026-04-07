@@ -2,12 +2,11 @@ from flask import Flask
 import socket
 import os
 
-app = Flask(__name__)
-
 @app.route("/")
 def home():
-    message = os.getenv("MESSAGE", "Default Message")
-    return f"{message} | Pod: {socket.gethostname()}"
+    message = os.getenv("MESSAGE", "Default")
+    password = os.getenv("PASSWORD", "NoPass")
+    return f"{message} | Password: {password} | Pod: {socket.gethostname()}"
 
 @app.route("/health")
 def health():
