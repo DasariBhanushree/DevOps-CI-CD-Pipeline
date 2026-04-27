@@ -71,3 +71,29 @@ GitHub → GitHub Actions → Terraform → AWS → Application
 ## Author
 
 BhanuShree
+
+
+
++---------+
+| GitHub  |
++---------+
+     |
+     v
++---------------------------+
+| GitHub Actions (CI/CD)    |
++---------------------------+
+     |
+     v
++-----------+
+| Terraform |
++-----------+
+     |
+     v
++-----------------------+
+| AWS (EC2, S3)         |
++-----------------------+
+     |
+     v
++--------------+
+| Application  |
++--------------+
