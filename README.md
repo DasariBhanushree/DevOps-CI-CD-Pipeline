@@ -73,4 +73,10 @@ GitHub → GitHub Actions (CI/CD) → Terraform → AWS → Application Deployme
 
 ---
 
+## 💼 Real-World Use Case
+
+This project simulates a real-world DevOps workflow where developers push code changes, and the system automatically builds, provisions infrastructure, and deploys the application without manual intervention.
+
+This approach helps reduce deployment errors, improves consistency, and enables faster release cycles.
+
 
