@@ -19,7 +19,7 @@ GitHub → GitHub Actions (CI/CD) → Terraform → AWS → Application Deployme
 * AWS (EC2, S3, VPC, IAM)
 * Terraform (Infrastructure as Code)
 * GitHub Actions (CI/CD)
-* Docker (optional if used)
+* Docker 
 * Linux
 
 ---
@@ -73,6 +73,4 @@ GitHub → GitHub Actions (CI/CD) → Terraform → AWS → Application Deployme
 
 ---
 
-## 🤝 Connect
 
-If you found this project useful, feel free to connect with me on LinkedIn.
