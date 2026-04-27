@@ -1,82 +1,73 @@
-# 🚀 DevOps CI/CD Pipeline using Terraform & GitHub Actions
+DevOps CI/CD Pipeline using Terraform & GitHub Actions
 
-## 📌 Project Overview
+Project Overview
 
-This project demonstrates a complete DevOps workflow by automating infrastructure provisioning and application deployment on AWS.
+I built this project to automate infrastructure setup and application deployment on AWS using Terraform and GitHub Actions.
 
-It simulates a real-world scenario where code changes trigger a CI/CD pipeline that provisions infrastructure and deploys an application automatically.
-
----
-
-## 🏗️ Architecture
-
-GitHub → GitHub Actions (CI/CD) → Terraform → AWS → Application Deployment
+Instead of doing manual deployments, this pipeline automatically provisions infrastructure and deploys the application whenever code is pushed.
 
 ---
 
-## 🛠️ Tech Stack
+## Architecture
+
+GitHub → GitHub Actions → Terraform → AWS → Application
+
+---
+
+## Tools Used
 
 * AWS (EC2, S3, VPC, IAM)
-* Terraform (Infrastructure as Code)
-* GitHub Actions (CI/CD)
-* Docker 
+* Terraform
+* GitHub Actions
 * Linux
 
 ---
 
-## ⚙️ How It Works
+## How it works
 
-1. Developer pushes code to GitHub
-2. GitHub Actions pipeline is triggered
-3. Terraform initializes and provisions infrastructure
-4. Application is deployed on AWS
-5. Pipeline ensures continuous integration and delivery
-
----
-
-## 📂 Project Structure
-
-* `/terraform` → Infrastructure code
-* `/app` → Application code
-* `.github/workflows` → CI/CD pipeline configuration
+1. Code is pushed to GitHub
+2. GitHub Actions workflow is triggered
+3. Terraform runs and creates infrastructure on AWS
+4. Application is deployed automatically
 
 ---
 
-## 🚀 How to Run
+## Project Structure
+
+* terraform/ → Terraform code
+* .github/workflows/ → CI/CD pipeline
+* app/ → Application code
+
+---
+
+## Steps to run
 
 1. Clone the repository
 2. Configure AWS credentials
-3. Run Terraform:
-
-   ```
+3. Run:
    terraform init
    terraform apply
-   ```
-4. Trigger GitHub Actions workflow
+4. Push changes to trigger pipeline
 
 ---
 
-## 🎯 Key Learnings
+## What I learned
 
-* Automated infrastructure provisioning using Terraform
-* CI/CD pipeline setup using GitHub Actions
-* Understanding real-world DevOps workflow
-* Hands-on experience with AWS services
+* How CI/CD pipelines work in real scenarios
+* How to provision infrastructure using Terraform
+* How to automate deployments instead of manual work
+* Understanding end-to-end DevOps workflow
 
 ---
 
-## 📌 Future Improvements
+## Next improvements
 
 * Add Kubernetes deployment (EKS)
-* Implement monitoring (CloudWatch/Prometheus)
-* Improve security using IAM best practices
+* Add monitoring setup
+* Improve security configurations
 
 ---
 
-## 💼 Real-World Use Case
+## Author
 
-This project simulates a real-world DevOps workflow where developers push code changes, and the system automatically builds, provisions infrastructure, and deploys the application without manual intervention.
-
-This approach helps reduce deployment errors, improves consistency, and enables faster release cycles.
-
-
+BhanuShree
