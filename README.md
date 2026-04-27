@@ -1,6 +1,6 @@
-DevOps CI/CD Pipeline using Terraform & GitHub Actions
+DevOps CI/CD Pipeline using Terraform & GitHub Actions 
 
-Project Overview
+#Project Overview
 
 I built this project to automate infrastructure setup and application deployment on AWS using Terraform and GitHub Actions.
 
